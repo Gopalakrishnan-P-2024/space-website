@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLAR SYSTEM SIMULATOR</title>
+    <link rel="icon" href="c:\Users\22142\OneDrive\Desktop\space web\solar-system.png">
+</head>
+<body> 
+    <div id="info">
+        <center>
+        <h1 style="color: rgb(255, 136, 0)">Solar System Simulator 🌎 </h1>
+        <h4>The Solar System consists of eight planets,
+            Revolutionizing around the Sun's radiant glow.
+            From Mercury to Neptune, each unique and grand,
+            A celestial wonder, in our cosmic land.
+            </h4>
+            <hr>
+        </center>
+        <div id="controls">
+            <button id="pause-resume" style="background-color: blue; color: white;">Pause</button>
+            <button id="reset-view" style="background-color: rgb(34, 0, 255); color: rgb(255, 255, 255); ">Reset View</button>
+            <label>
+                Orbit Speed:
+                <input type="range" id="orbit-speed" min="0.1" max="2" step="0.1" value="1">
+            </label>
+            <label>
+                <input type="checkbox" id="show-labels"  checked>
+                Show Labels
+            </label>
+            <label>
+                <input type="checkbox" id="show-orbits"  checked>
+                Show Orbits
+            </label>
+            <button id="toggle-night-mode" style="background-color: blue; color: white;">Night Mode</button>
+            <select id="focus-planet" style="background-color: blue; color: white;">
+                <option value="">Focus on...</option>
+                <option value="Sun">Sun</option>
+                <option value="Mercury">Mercury</option>
+                <option value="Venus">Venus</option>
+                <option value="Earth">Earth</option>
+                <option value="Mars">Mars</option>
+                <option value="Jupiter">Jupiter</option>
+                <option value="Saturn">Saturn</option>
+                <option value="Uranus">Uranus</option>
+                <option value="Neptune">Neptune</option>
+            </select>
+        </div>
+    </div>
+    <div id="planet-info"></div>
+    <canvas id="solar-system"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+    <script src="script.js"></script>
+    <center>   <h2 style="color: rgb(0, 255, 13)">Thanks For You..</h2></center>
+ 
+</body>
+</html>
